@@ -17,4 +17,4 @@ test = [
 ]
 
 [tool.setuptools]
-packages = ["calculator"]
+py-modules = ["calculator"]
