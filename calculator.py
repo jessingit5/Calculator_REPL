@@ -34,7 +34,7 @@ def get_operation():
             return op_symbol
         print(f"Invalid operation '{op_symbol}'. Please try again.")
 
-def get_number(prompt, input=input):
+def get_number(prompt):
     
     while True:
         try:
@@ -42,7 +42,7 @@ def get_number(prompt, input=input):
         except ValueError:
             print("Invalid input. Please enter a valid number.")
 
-def run_calculator_repl(input=input):
+def run_calculator_repl(input):
    
     print("Welcome to the Python Command-Line Calculator!")
     while True:
@@ -72,7 +72,6 @@ def run_calculator_repl(input=input):
             break
 
 def main():
-    """Main entry point for the application."""
     run_calculator_repl()
 
 if __name__ == "__main__":
